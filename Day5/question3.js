@@ -1,12 +1,3 @@
-let num = Math.floor(Math.random()*100)+1;
-
-console.log(num);
-
-url = 'https://jsonplaceholder.typicode.com/todos/'+num;
-
-fetch(url).then(response=>response.json())
-.then(data=>console.log(data));
-
 
 async function fetchdata(url){
     const response = await fetch(url);
